@@ -359,7 +359,7 @@
         });
     });
 
-    // ── COMMENT ─────────────────────────────────────────────
+    // ── COMMENT ────────────────────────
     const blogId = {{ $blogs->id }};
     const baseUrl = "{{ url('/') }}";
     const isAuthComment = {{ auth()->check() ? 'true' : 'false' }}; // đổi tên tránh xung đột
