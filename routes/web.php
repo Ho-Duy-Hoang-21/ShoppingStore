@@ -109,7 +109,7 @@ Route::get('/blog', [BlogMemberController::class, 'getblog'])->name('member.blog
 Route::get('/blog-detail/{id}', [BlogMemberController::class, 'getblogDetail'])->name('member.blog.detail');
 Route::post('/blog/rate', [BlogController::class, 'rate'])->name('blog.rate')->middleware('auth');
 
-// Comment ..
+// Comment
 // Route::post('/comment', [CommentController::class, 'storeComment'])->name('comment.store')->middleware('auth');
 Route::post('/comment', [CommentController::class, 'storeAjax'])
     ->name('comment.store')
@@ -117,6 +117,10 @@ Route::post('/comment', [CommentController::class, 'storeAjax'])
 Route::get('/comment', [CommentController::class, 'index']);
 // Product
 Route::get('/product-detail/{id}', [ProductDetailController::class, 'detail'])->name('product.detail');
+Route::get('/product-detail/{id}', [ProductDetailController::class, 'detail'])->name('product.detail');
+Route::get('/product-detail/{id}', [ProductDetailController::class, 'detail'])->name('product.detail');
+Route::get('/product-detail/{id}', [ProductDetailController::class, 'detail'])->name('product.detail');
+
 
 // Cart (public)
 Route::get('/cart/index', [CartController::class, 'showCart'])->name('cart.index');
